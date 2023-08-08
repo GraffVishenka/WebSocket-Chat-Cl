@@ -8,7 +8,7 @@ const WebSock = () => {
   const [username, setUsername] = useState("");
 
   function connect() {
-    socket.current = new WebSocket("ws://websocket-chat-s.onrender.com");
+    socket.current = new WebSocket("wss://websocket-chat-s.onrender.com");
 
     socket.current.onopen = () => {
       setConnected(true);
